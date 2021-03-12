@@ -53,7 +53,7 @@ recuperar()
    backup_recupera=$1
    destino=$2
 
-   if ! tar -xzf $backup_recupera -C $destino  
+   if ! tar -xvzf $backup_recupera -C $destino  >>1/dev/null
    then
      exit 1
    fi
